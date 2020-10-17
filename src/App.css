@@ -6,3 +6,15 @@
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
+
+.app {
+  display: flex;
+}
+
+.chat {
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #363a3f;
+}

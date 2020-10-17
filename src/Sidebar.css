@@ -60,7 +60,8 @@
   padding: 8px;
 }
 
-.sidebar__voice {
+.sidebar__voice,
+.sidebar__profile {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,5 +88,18 @@
 }
 
 .sidebar__voiceIcons > .MuiSvgIcon-root {
+  margin: 10px;
+}
+
+.sidebar__profileInfo {
+  flex: 1;
+  padding: 10px;
+}
+
+.sidebar__profileInfo > h3 {
+  color: white;
+}
+
+.sidebar__profileIcons > .MuiSvgIcon-root {
   margin: 10px;
 }

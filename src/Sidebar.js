@@ -7,6 +7,10 @@ import SidebarChannel from "./SidebarChannel";
 import CallIcon from "@material-ui/icons/Call";
 import MicIcon from "@material-ui/icons/Mic";
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
+import HeadsetIcon from "@material-ui/icons/Headset";
+import SettingsIcon from "@material-ui/icons/Settings";
+import { Avatar } from "@material-ui/core";
+
 function Sidebar() {
   return (
     <div className="sidebar">
@@ -44,8 +48,19 @@ function Sidebar() {
           <CallIcon />
         </div>
       </div>
-      
-      <div className="sidebar__profile"></div>
+
+      <div className="sidebar__profile">
+        <Avatar />
+        <div className="sidebar__profileInfo">
+          <h3>@ssssangha</h3>
+          <p>#thisIsMyID</p>
+        </div>
+        <div className="sidebar__profileIcons">
+          <MicIcon />
+          <HeadsetIcon />
+          <SettingsIcon />
+        </div>
+      </div>
     </div>
   );
 }
