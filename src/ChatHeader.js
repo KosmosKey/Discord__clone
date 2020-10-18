@@ -5,13 +5,16 @@ import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
 import SearchIcon from "@material-ui/icons/Search";
 import HelpIcon from "@material-ui/icons/Help";
 import SendIcon from "@material-ui/icons/Send";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import { IconButton } from "@material-ui/core";
+import { auth } from "./firebase";
 
-function ChatHeader() {
+function ChatHeader({ ChannelName }) {
   return (
     <div className="chatHeader">
       <div className="chatHeader__left">
         <h3>
-          <span className="chatHeader_hash">#</span> YouTube
+          <span className="chatHeader_hash">#</span> {ChannelName}
         </h3>
       </div>
       <div className="chatHeader__right">
@@ -24,6 +27,9 @@ function ChatHeader() {
         </div>
         <SendIcon />
         <HelpIcon />
+        <IconButton style={{ color: "#808080" }} onClick={() => auth.signOut()}>
+          <ExitToAppIcon className="chatHeader__ExitAppIcon" />
+        </IconButton>
       </div>
     </div>
   );

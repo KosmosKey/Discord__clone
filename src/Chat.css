@@ -84,4 +84,9 @@
 
 .chat__messages {
   flex: 1;
+  overflow: scroll;
+}
+
+.chatHeader__ExitAppIcon:hover {
+  color: #fff;
 }

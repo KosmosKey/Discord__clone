@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="app">
-      {loading ? <Loading /> : ""}
+      {loading && <Loading />}
       {user ? (
         <Switch>
           <Route path="/">
